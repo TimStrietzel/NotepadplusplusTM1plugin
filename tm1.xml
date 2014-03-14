@@ -1,0 +1,2599 @@
+<!-- (c) 2012 Tim Strietzel - email[-AT-]tim-strietzel.de -->
+
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<AutoComplete language="tm1">
+		<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";"/>
+		<KeyWord name="ABS" func="yes">
+			<Overload retVal="RT: Returns the absolute value of x. | nbr =" >
+				<Param name="nbr x"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ACOS" func="yes">
+			<Overload retVal="RT: Returns the angle, in radians, whose cosine is x. | nbr =" >
+				<Param name="nbr x"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AddClient" func="yes">
+      <Overload retVal="_T: Creates a new client on the server. |" >
+				<Param name="str ClientName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AddGroup" func="yes">
+			<Overload retVal="_T: Creates a new user group on the server. |" >
+				<Param name="str GroupName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ASCIIDelete" func="yes">
+			<Overload retVal="_T: Deletes an ASCII file. |" >
+				<Param name="str FileName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ASCIIOutput" func="yes">
+			<Overload retVal="_T: Writes a csv record to an ASCII file. |" >
+				<Param name="str FileName"/>
+				<Param name="str String1"/>
+				<Param name="str String2"/>
+				<Param name="str ... StringN"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ASIN" func="yes">
+			<Overload retVal="RT: Returns the angle, in radians, whose sine is x. | nbr =" >
+				<Param name="nbr x"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AssignClientPassword" func="yes">
+			<Overload retVal="_T: Assigns a password to an ex. client. | nbr [0,1] =" >
+				<Param name="str ClientName"/>
+				<Param name="str newPassword"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AssignClientToGroup" func="yes">
+			<Overload retVal="_T: Assigns an exist. client to an exist. group. |" >
+				<Param name="str ClientName"/>
+				<Param name="str GroupName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ATAN" func="yes">
+			<Overload retVal="RT: Returns the angle, in radians, whose tangent is x. | nbr =" >
+				<Param name="nbr x"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AttrDelete" func="yes">
+			<Overload retVal="_T: Deletes an attribut from a dimension. |" >
+				<Param name="str DimName"/>
+				<Param name="str AttrName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AttrInsert" func="yes">
+			<Overload retVal="_T: Creates a new attribut for a dimension. |" >
+				<Param name="str DimName"/>
+				<Param name="str PrevAttr"/>
+				<Param name="str AttrName"/>
+				<Param name="str Type [A,S,N]"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ATTRN" func="yes">
+			<Overload retVal="RT: Returns the value of a numeric attribute. | nbr =" >
+				<Param name="str DimName"/>
+				<Param name="str ElemName"/>
+				<Param name="str AttrName"/>
+      </Overload> 
+    </KeyWord>
+		<KeyWord name="AttrPutN" func="yes">
+			<Overload retVal="_T: Assigns a value to a numeric attribute. |" >
+				<Param name="nbr Value"/>
+				<Param name="str DimName"/>
+				<Param name="str ElemName"/>
+				<Param name="str AttrName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="AttrPutS" func="yes">
+			<Overload retVal="_T: Assigns a value to a string attribute. |" >
+				<Param name="str Value"/>
+				<Param name="str DimName"/>
+				<Param name="str ElemName"/>
+				<Param name="str AttrName"/>
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ATTRS" func="yes">
+			<Overload retVal="RT: Returns the value of a string attribute. | str =" >
+				<Param name="str DimName"/>
+				<Param name="str ElemName"/>
+				<Param name="str AttrName"/>
+      </Overload> 
+    </KeyWord>
+		<KeyWord name="BatchUpdateFinish" func="yes">
+			<Overload retVal="_T: Instructs the server to exit batch update mode. |" >
+				<Param name="nbr FlagSaveChanges" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="BatchUpdateStart" func="yes">
+			<Overload retVal="_T: Enables batch updates. |" >
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CAPIT" func="yes">
+			<Overload retVal="RT: Applies initial capitalization to every word. | str =" >
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CellGetN" func="yes">
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>   
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a numeric cube cell. | nbr =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload>  
+    </KeyWord>
+		<KeyWord name="CellGetS" func="yes">
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Retrieves a value from a string cube cell. | str =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+    </KeyWord>
+		<KeyWord name="CellIsUpdateable" func="yes">  
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Determines if a cube cell can be written to. | nbr [1,0] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+    </KeyWord>
+		<KeyWord name="CellPutN" func="yes">
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a numeric value to a cube cell. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+			
+    </KeyWord>
+		<KeyWord name="CellPutProportionalSpread" func="yes">
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Spreads a value to the N-elems of a C-elem proportional to existing value on the N-elems. |" >
+				<Param name="nbr Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+			
+    </KeyWord>
+		<KeyWord name="CellPutS" func="yes">
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="_T: Sends a string value to a cube cell. |" >
+				<Param name="str Value"/>
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+			
+    </KeyWord>
+		<KeyWord name="CHAR" func="yes">
+			<Overload retVal="RT: Returns the character identified by an ASCII code. | str =" >
+				<Param name="nbr AsciiCode" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ChoreQuit" func="yes">
+			<Overload retVal="_T: Causes the immediate termination of a chore. |" >
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CODE" func="yes">
+			<Overload retVal="RT: Returns the ASCII code for a character within a string. | nbr =" >
+				<Param name="str TextString" />
+				<Param name="nbr CharacterLocation" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ConsolidateChildren" func="yes">
+			<Overload retVal="RT: Forces C values to be calculated by summing immediate children. | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+    <KeyWord name="Continue" func="yes">
+			<Overload retVal="RT: Allows another rule with the same area definition to be executed. |" />
+    </KeyWord>
+		<KeyWord name="COS" func="yes">
+			<Overload retVal="RT: Returns the cosine of an angle. | nbr =" >
+				<Param name="nbr Angle" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeCreate" func="yes">
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+      </Overload>      
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+      </Overload>      
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+				<Param name="str d12"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+				<Param name="str d12"/>
+				<Param name="str d13"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+				<Param name="str d12"/>
+				<Param name="str d13"/>
+				<Param name="str d14"/>
+      </Overload>
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+				<Param name="str d12"/>
+				<Param name="str d13"/>
+				<Param name="str d14"/>
+				<Param name="str d15"/>
+      </Overload>      
+			<Overload retVal="_T: Creates a cube from specified dimensions. |" >
+				<Param name="str CubeName"/>
+				<Param name="str d1"/>
+				<Param name="str d2"/>
+				<Param name="str d3"/>
+				<Param name="str d4"/>
+				<Param name="str d5"/>
+				<Param name="str d6"/>
+				<Param name="str d7"/>
+				<Param name="str d8"/>
+				<Param name="str d9"/>
+				<Param name="str d10"/>
+				<Param name="str d11"/>
+				<Param name="str d12"/>
+				<Param name="str d13"/>
+				<Param name="str d14"/>
+				<Param name="str d15"/>
+				<Param name="str d16"/>
+      </Overload> 
+    </KeyWord>  
+		<KeyWord name="CubeClearData" func="yes">
+			<Overload retVal="_T: Clears all of the data in a cube. |" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeDestroy" func="yes">
+			<Overload retVal="_T: Deletes a cube. |" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeExists" func="yes">
+			<Overload retVal="_T: Determines if a cube exists in the database. | nbr [1,0] =" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeGetLogChanges" func="yes">
+			<Overload retVal="_T: Determines the status of the logging property. | nbr [1,0] =" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeProcessFeeders" func="yes">
+			<Overload retVal="_T: Reprocesses all feeders in the rules for a cube. |" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeSetConnParams" func="yes">
+			<Overload retVal="_T: Encrypts the password for a virtual cube. | nbr =" >
+				<Param name="str CubeName" />
+				<Param name="str ProviderName" />
+				<Param name="str DataSoureLocation" />
+				<Param name="str DataSoureName" />
+				<Param name="str DataSoureCatalog" />
+				<Param name="str UserID" />
+				<Param name="str Password" />
+				<Param name="str SapClientLang" />
+				<Param name="str ProviderString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeSetLogChanges" func="yes">
+			<Overload retVal="_T: Sets the logging property for a cube. |" >
+				<Param name="str CubeName" />
+				<Param name="nbr LogChanges [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="CubeUnload" func="yes">
+			<Overload retVal="_T: Unloads a cube from memory. |" >
+				<Param name="str CubeName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DATE" func="yes">
+			<Overload retVal="RT: Returns the date in 'yy-mm-dd' format for a serial number. | str =" >
+				<Param name="nbr SerialDateNumber" />
+      </Overload>
+			<Overload retVal="RT: Returns the date in 'yy-mm-dd' or 'yyyy-mm-dd' format for a serial number. | str =" >
+				<Param name="nbr SerialDateNumber" />
+				<Param name="nbr ReturnFourDigitYear [1,0]" />             
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DATES" func="yes">
+			<Overload retVal="RT: Returns a date string in 'yy-mm-dd' or 'yyyy-mm-dd' format. | str =" >
+				<Param name="nbr year [yy,yyyy]" />
+				<Param name="nbr month [mm]" />
+				<Param name="nbr day [dd]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DAY" func="yes">
+			<Overload retVal="RT: Returns a numeric value for the day in a given date string. | nbr =" >
+				<Param name="str DateString [yy-mm-dd,yyyy-mm-dd]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DAYNO" func="yes">
+			<Overload retVal="RT: Returns the serial date number for a date string. | nbr =" >
+				<Param name="str DateString [yy-mm-dd,yyyy-mm-dd]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DB" func="yes">  
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+      </Overload>      
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+      </Overload>      
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+      </Overload>
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+      </Overload>      
+			<Overload retVal="R_: Allows a rule to contain more complex logic and references | [str,nbr] =" >
+				<Param name="str CubeName"/>
+				<Param name="str e1"/>
+				<Param name="str e2"/>
+				<Param name="str e3"/>
+				<Param name="str e4"/>
+				<Param name="str e5"/>
+				<Param name="str e6"/>
+				<Param name="str e7"/>
+				<Param name="str e8"/>
+				<Param name="str e9"/>
+				<Param name="str e10"/>
+				<Param name="str e11"/>
+				<Param name="str e12"/>
+				<Param name="str e13"/>
+				<Param name="str e14"/>
+				<Param name="str e15"/>
+				<Param name="str e16"/>
+      </Overload> 
+    </KeyWord>
+		<KeyWord name="DELET" func="yes">
+			<Overload retVal="RT: Returns a string after deleting a number of characters from it. | str =" >
+				<Param name="str TextString" />
+				<Param name="nbr StartPoint" />
+				<Param name="nbr NumberOfCharsToDelete" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DeleteClient" func="yes">
+			<Overload retVal="_T: Deletes a client from the server. |" >
+				<Param name="str ClientName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DeleteGroup" func="yes">
+			<Overload retVal="_T: Deletes a group from the server.  |" >
+				<Param name="str GroupName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionCreate" func="yes">
+			<Overload retVal="_T: Creates a new dimension. |" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionDeleteAllElements" func="yes">
+			<Overload retVal="_T: Deletes all the elements in a dimension. |" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionDestroy" func="yes">
+			<Overload retVal="_T: Deletes a dimension from the TM1 database. |" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionElementComponentAdd" func="yes">
+			<Overload retVal="_T: Adds a component (child) to a consolidated element. |" >
+				<Param name="str DimName" />
+				<Param name="str ParentElementName" />
+				<Param name="str ChildElementName" />
+				<Param name="str ChildElementWeight" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionElementComponentDelete" func="yes">
+			<Overload retVal="_T: Deletes a component (child) from a consolidated element. |" >
+				<Param name="str DimName" />
+				<Param name="str ParentElementName" />
+				<Param name="str ChildElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionElementDelete" func="yes">
+			<Overload retVal="_T: Deletes an element from a dimension. |" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionElementInsert" func="yes">
+			<Overload retVal="_T: Adds an element to a dimension. |" >
+				<Param name="str DimName" />        
+				<Param name="nbr InsertionPoint" />        
+				<Param name="str ElementName" />        
+				<Param name="str ElementType [N,C,S]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionElementPrincipalName" func="yes">
+			<Overload retVal="_T: Returns the principal name of an element or element alias. | str =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionExists" func="yes">
+			<Overload retVal="_T: Determines if a dimension exists on the server. | nbr [1,0] =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimensionSortOrder" func="yes">
+			<Overload retVal="_T: Sets a sort type and sense for dimension elements. |" >
+				<Param name="str DimName" />
+				<Param name="str CompSortType" />
+				<Param name="str CompSortSense" />
+				<Param name="str ElemSortType" />
+				<Param name="str ElemSortType" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimIx" func="yes">
+			<Overload retVal="RT: Returns the index number of an element. | nbr =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimNm" func="yes">
+			<Overload retVal="RT: Returns an elements name by its index. | str =" >
+				<Param name="str DimName" />
+				<Param name="nbr ElementIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DimSiz" func="yes">
+			<Overload retVal="RT: Returns the number of elements within a dimension. | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DNEXT" func="yes">
+			<Overload retVal="RT: Returns the element name that follows the given element. | str =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DNLEV" func="yes">
+			<Overload retVal="RT: Returns the number of levels in a dimension. | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="DTYPE" func="yes">
+			<Overload retVal="RT: Returns the element type of an element. | str [N,C,S] =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELCOMP" func="yes">
+			<Overload retVal="RT: Returns an element by its relative index number to its parent element. | str =" >
+				<Param name="str DimName" />
+				<Param name="str ParentElementName" />
+				<Param name="nbr RelativeChildElementIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELCOMPN" func="yes">
+			<Overload retVal="RT: Returns the number of components below a specified parent element. | nbr =" >
+				<Param name="str DimName" />
+				<Param name="str ParentElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ElementSecurityGet" func="yes">
+			<Overload retVal="_T: Retrieves the security level of a group for an element. | str =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+				<Param name="str GroupName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ElementSecurityPut" func="yes">
+			<Overload retVal="_T: Assigns the security level of a group for an element. |" >
+				<Param name="str SecurityLevel" />
+				<Param name="str DimName" />
+				<Param name="str ElementName" />      
+				<Param name="str GroupName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELISANC" func="yes">
+			<Overload retVal="RT: Determines if an element is an ancestor of another element. | nbr [1,0] =" >
+				<Param name="str DimName" />
+				<Param name="str AncestorElementToTest" />
+				<Param name="str ChildElementToTest" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELISCOMP" func="yes">
+			<Overload retVal="RT: Determines if an element is a direct child of another element. | nbr [1,0] =" >
+				<Param name="str DimName" />        
+				<Param name="str ChildElementToTest" />
+				<Param name="str ParentElementToTest" />        
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELISPAR" func="yes">
+			<Overload retVal="RT: Determines if an element is a direct parent of another element. | nbr [1,0] =" >
+				<Param name="str DimName" />        
+				<Param name="str ParentElementToTest" /> 
+				<Param name="str ChildElementToTest" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELLEV" func="yes">
+			<Overload retVal="RT: Returns the level of an element. | nbr =" >
+				<Param name="str DimName" />
+				<Param name="str ElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELPAR" func="yes">
+			<Overload retVal="RT: Returns the parent of an element. | str =" >
+				<Param name="str DimName" />
+				<Param name="str ChildElementName" />
+				<Param name="nbr RelativeParentElementIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELPARN" func="yes">
+			<Overload retVal="RT: Returns the number of parents of an element. | nbr =" >
+				<Param name="str DimName" />        
+				<Param name="str ChildElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="else" func="yes">
+			<Overload retVal="_T: Extends an if process fork by an else statement: if();{[else;],[elseif();]}endif; .  |" />
+    </KeyWord>
+		<KeyWord name="elseif" func="yes">
+			<Overload retVal="_T: Extends an if process fork by a conditional else-statement: if();{[else;],[elseif();]}endif; . |" >
+				<Param name="Condition" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ELWEIGHT" func="yes">
+			<Overload retVal="RT: Returns the weight of a child in a consolidated element. | nbr =" >
+				<Param name="str DimName" />
+				<Param name="str ParentElementName" />
+				<Param name="str ChildElementName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="end" func="yes">
+			<Overload retVal="_T: Terminates a while process loop. |" />
+    </KeyWord>
+		<KeyWord name="endif" func="yes">
+			<Overload retVal="_T: Terminates an if process fork. |" />
+    </KeyWord>
+		<KeyWord name="ExecuteCommand" func="yes">
+			<Overload retVal="_T: Executes a OS command line during a process. |" >
+				<Param name="str CommandLineString" />
+				<Param name="nbr WaitForCommandTermination [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ExecuteProcess" func="yes">
+			<Overload retVal="_T: Executes a TurboIntegrator process. |" >
+				<Param name="str ProcessName" />
+				<Param name="str Param1Name" />
+				<Param name="str Param1Value" />
+				<Param name="str Param2Name" />
+				<Param name="str Param2Value, ..." />
+      </Overload>
+			<Overload retVal="_T: Executes a TurboIntegrator process and returns a status value. | nbr =" >
+				<Param name="str ProcessName" />
+				<Param name="str Param1Name" />
+				<Param name="str Param1Value" />
+				<Param name="str Param2Name" />
+				<Param name="str Param2Value, ..." />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="EXP" func="yes">
+			<Overload retVal="RT: Returns the natural anti-log of a number (number * 'Eulersche Zahl'). | nbr =" >
+				<Param name="str Number" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="Expand" func="yes">
+			<Overload retVal="_T: Expands TI variable names to their values during run time. | nbr =" >
+				<Param name="str VariableNameString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="fileExists" func="yes">
+			<Overload retVal="_T: Determines if a specified file exists. | nbr [1,0] =" >
+				<Param name="str FileName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="FILL" func="yes">
+			<Overload retVal="RT: Repeats a string to gain a given length. | str =" >
+				<Param name="str StringToRepeat" />
+				<Param name="nbr Length" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ForceSkipCheck" func="yes">
+			<Overload retVal="_T: Forces the query to perform as if the cube had a SKIPCHECK in the rules. |" />
+    </KeyWord>
+		<KeyWord name="FV" func="yes">
+			<Overload retVal="RT: Returns the value of an annuity at the time of the last payment. | nbr =" >
+				<Param name="nbr PaymentAmount" />
+				<Param name="nbr InterestRate" />
+				<Param name="nbr PeriodsInAnnuity" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="GetProcessErrorFileDirectory" func="yes">
+			<Overload retVal="_T: Returns the Path of the TM1 log directory. | str =" />
+    </KeyWord>
+		<KeyWord name="GetProcessErrorFilename" func="yes">
+			<Overload retVal="_T: Returns the name of the associated process error log file. | str ="/>
+    </KeyWord>
+		<KeyWord name="GetUseActiveSandboxProperty" func="yes">
+			<Overload retVal="_T: Determines if a process is using a sandbox and not the database. | nbr [1,0] =" />
+    </KeyWord>
+		<KeyWord name="if" func="yes">
+			<Overload retVal="_T: Initiates a conditional process fork: if();{[else;],[elseif();]}endif; |" >
+				<Param name="Condition" />
+      </Overload>
+			<Overload retVal="R_: Defines a conditional rule expression. | [nbr,str] =" >
+				<Param name="Condition" />
+				<Param name="IfExpression" />
+				<Param name="ElseExpression" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="INSRT" func="yes">
+			<Overload retVal="RT: Inserts one string into another string. | str =" >
+				<Param name="str InsertTextString" />
+				<Param name="str BaseTextString" />
+				<Param name="nbr InsertPosition" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="INT" func="yes">
+			<Overload retVal="RT: Rounds a real number down to an integer. | nbr =" >
+				<Param name="nbr RealValue" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ISLEAF" func="yes">
+			<Overload retVal="R_: Determines if a cell is a leaf cell. | nbr [1,0] =" />
+    </KeyWord>
+		<KeyWord name="ISUND" func="yes">
+			<Overload retVal="RT: Determines if a value is undefined. | nbr [1,0] =" >
+				<Param name="nbr Number" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ItemReject" func="yes">
+			<Overload retVal="_T: Rejects a datasource record and writes an error log. |" >
+				<Param name="str ErrorTextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ItemSkip" func="yes">
+			<Overload retVal="_T: Skips a datasource record. | nbr =" />
+    </KeyWord>
+		<KeyWord name="LN" func="yes">
+			<Overload retVal="RT: Returns the natural logarithm (base e) of a number. | nbr =" >
+				<Param name="nbr PositiveNumber" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="LOG" func="yes">
+			<Overload retVal="RT: Returns the base 10 logarithm of a positive number. | nbr =" >
+				<Param name="nbr PositiveNumber" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="LONG" func="yes">
+			<Overload retVal="RT: Returns the length of a string. | nbr =" >
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="LOWER" func="yes">
+			<Overload retVal="RT: Converts all characters in a string to lower case. | str =" >
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="MAX" func="yes">
+			<Overload retVal="RT: Returns the largest number in a pair of values. | nbr =" >
+				<Param name="nbr Number1" />
+				<Param name="nbr Number2" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="MIN" func="yes">
+			<Overload retVal="RT: Returns the smallest number in a pair of values. | nbr =" >
+				<Param name="nbr Number1" />
+				<Param name="nbr Number2" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="MOD" func="yes">
+			<Overload retVal="RT: Returns the remainder of dividing a number by a divisor. | nbr =" >
+				<Param name="nbr Number" />
+				<Param name="nbr Divisor" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="MONTH" func="yes">
+			<Overload retVal="RT: Returns a numeric value for the month a date string. | nbr =" >
+				<Param name="str DateString [yy-mm-dd,yyyy-mm-dd]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="NOW" func="yes">
+			<Overload retVal="RT: Returns the current date/time value as a serial number. | nbr =" />
+    </KeyWord>
+		<KeyWord name="NumberToString" func="yes">
+			<Overload retVal="_T: Converts a number to a string in standard format. | str =" >
+				<Param name="nbr RealNumber" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="NumberToStringEx" func="yes">
+			<Overload retVal="_T: Converts a number to a string in a specific format. | str =" >
+				<Param name="nbr RealNumber" />
+				<Param name="str NumericFormatString" />
+				<Param name="str DecimalSep" />
+				<Param name="str ThousandsSep" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="Numbr" func="yes">
+			<Overload retVal="RT: Converts a string to a number. | nbr =" >
+				<Param name="str NumberString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="NumericGlobalVariable" func="yes">
+			<Overload retVal="_T: Declares a variable to becomme globally valid. |" >
+				<Param name="str VarName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="NumericSessionVariable" func="yes">
+			<Overload retVal="_T: Declares a variable to becomme valid session wide. |" >
+				<Param name="str VarName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ODBCClose" func="yes">
+			<Overload retVal="_T: Closes a connection to an ODBC data source. |" >
+				<Param name="str dataSource" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ODBCOpen" func="yes">
+			<Overload retVal="_T: Opens a connection to an ODBC data source. |" >
+				<Param name="str dataSource" />
+				<Param name="str ClientName" />
+				<Param name="str Password" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ODBCOPENEx" func="yes">
+			<Overload retVal="_T: Opens a connection to an ODBC data source. |" >
+				<Param name="str dataSource" />
+				<Param name="str ClientName" />
+				<Param name="str Password" />
+				<Param name="nbr UseUnicodeODBC [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ODBCOutput" func="yes">
+			<Overload retVal="_T: Executes an SQL update query against an ODBC data source. |" >
+				<Param name="str dataSource" />
+				<Param name="str SQLQueryLine1" />
+				<Param name="str SQLQueryLine2, ..." />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="PAYMT" func="yes">
+			<Overload retVal="RT: Returns the payment amount of an annuity. | nbr =" >
+				<Param name="nbr BasePrincipalValue" />
+				<Param name="nbr InterestRate" />
+				<Param name="nbr PeriodsInAnnuity" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ProcessBreak" func="yes">
+			<Overload retVal="_T: Stops processing the source data and proceeds to the Epilog. |" />
+    </KeyWord>
+		<KeyWord name="ProcessError" func="yes">
+			<Overload retVal="_T: Causes an immediate termination of a process flagging it as an error. |" />
+    </KeyWord>
+		<KeyWord name="ProcessExitByBreak" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited because of a break. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitByChoreQuit" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited because of a the execution of a ChoreQuit command. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitByQuit" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited because of a the execution of a ProcessQuit command. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitMinorError" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited with minor errors. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitNormal" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited normaly. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitOnInit" func="yes">
+			<Overload retVal="_T: Indicates, that a process abored on initialization. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitSeriousError" func="yes">
+			<Overload retVal="_T: Indicates, that a process abored due to a serios error. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessExitWithMessage" func="yes">
+			<Overload retVal="_T: Indicates, that a process exited normaly with a message written to the log file. | nbr =" />
+    </KeyWord>
+		<KeyWord name="ProcessQuit" func="yes">
+			<Overload retVal="_T: Causes an immediate termination of a process. |" />
+    </KeyWord>
+		<KeyWord name="PublishView" func="yes">
+			<Overload retVal="_T: Publishes a named private view on a server. |" >
+				<Param name="str CubeName" />
+				<Param name="str PrivateViewName" />
+				<Param name="nbr AlsoPublishPrivateSubsets [1,0]" />
+				<Param name="nbr OverwriteExistingView [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="PV" func="yes">
+			<Overload retVal="RT: Returns the initial principal value of an annuity. | nbr =" >
+				<Param name="nbr PaymentAmount" />
+				<Param name="nbr InterestRate" />
+				<Param name="nbr PeriodsInAnnuity" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="RAND" func="yes">
+			<Overload retVal="RT: Generates a random number between 0 and 1. | nbr =" />
+    </KeyWord>
+		<KeyWord name="RefreshMdxHierarchy" func="yes">
+			<Overload retVal="_T: Updates the MDX hierarchies in a server. |" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>    
+		<KeyWord name="RemoveClientFromGroup" func="yes">
+			<Overload retVal="_T: Removes a client from a user group. |" >
+				<Param name="str ClientName" />
+        <Param name="str GroupName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ROUND" func="yes">
+			<Overload retVal="RT: Rounds a number to the nearest integer. | nbr =" >
+				<Param name="nbr Number" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ROUNDP" func="yes">
+			<Overload retVal="RT: Rounds a number at decimal precision. | nbr =" >
+				<Param name="nbr Number" />
+				<Param name="nbr DecimalPrecision" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="RuleLoadFromFile" func="yes">
+			<Overload retVal="_T: Creates a TM1 rule for a from a file. |" >
+				<Param name="str CubeName" />
+				<Param name="str RuleFileName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SaveDataAll" func="yes">
+			<Overload retVal="_T: Saves all TM1 data from RAM to HDD. |" />
+    </KeyWord>
+		<KeyWord name="SCAN" func="yes">
+			<Overload retVal="RT: Returns the location of a substring in a string. | nbr =" >
+				<Param name="str SubString" />
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SecurityRefresh" func="yes">
+			<Overload retVal="_T: Regenerates the internal TM1 security structure. |" />
+    </KeyWord>
+		<KeyWord name="ServerActiveSandboxGet" func="yes">
+			<Overload retVal="_T: Gets the active sandbox of the executing user. | str =" />
+    </KeyWord>
+		<KeyWord name="ServerActiveSandboxSet" func="yes">
+			<Overload retVal="_T: Sets the active sandbox of the executing user. | " >
+				<Param name="str SandboxName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ServerShutDown" func="yes">
+			<Overload retVal="_T: Shuts down a server running as an application. |" >
+				<Param name="nbr SaveDataBeforeShutdown [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SetChoreVerboseMessages" func="yes">
+			<Overload retVal="_T: Toggles verbose reporting of messages to the log file. |" >
+				<Param name="nbr TurnOn [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SetUseActiveSandboxProperty" func="yes">
+			<Overload retVal="_T: Sets if a process uses a sandbox and not the database. | " >
+				<Param name="nbr PropertyValue [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SIGN" func="yes">
+			<Overload retVal="RT: Determines if a number is >, <, or = zero. | nbr [-1,0,1] =" >
+				<Param name="str Number" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SIN" func="yes">
+			<Overload retVal="RT: Returns the sine of an angle. | nbr =" >
+				<Param name="nbr Angle" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SQRT" func="yes">
+			<Overload retVal="RT: Returns the square root of a value. | nbr =" >
+				<Param name="nbr PositiveNumber" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="STET" func="yes">
+			<Overload retVal="R_: Cancels the effect of a rule for a particular element. |" />
+    </KeyWord>
+		<KeyWord name="STR" func="yes">
+			<Overload retVal="RT: Converts a number to a string. | str =" >
+				<Param name="nbr Number" />
+				<Param name="nbr LengthOfNewString" />
+				<Param name="nbr DecimalPlaces" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="StringGlobalVariable" func="yes">
+			<Overload retVal="_T: Declares a variable to becomme globally valid. |" >
+				<Param name="str VarName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="StringSessionVariable" func="yes">
+			<Overload retVal="_T: Declares a variable to becomme valid session wide. |" >
+				<Param name="str VarName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="StringToNumber" func="yes">
+			<Overload retVal="_T: Converts a string to a number using the standard format. | nbr =" >
+				<Param name="str NumberAsString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="StringToNumberEx" func="yes">
+      <Overload retVal="_T: Converts a string to a number using a specific format. | nbr =" >
+				<Param name="str NumberAsString" />
+				<Param name="nbr DecimalSep" />
+				<Param name="nbr ThousandsSep" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetAliasSet" func="yes">
+			<Overload retVal="_T: Sets the alias attribute to be used in a subset. |" >
+				<Param name="str DimName" />
+				<Param name="str SubsetName" />
+				<Param name="str AliasName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetCreate" func="yes">
+			<Overload retVal="_T: Creates an empty public subset. |" >
+				<Param name="str DimName" />
+				<Param name="str SubsetName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetCreateByMDX" func="yes">
+			<Overload retVal="_T: Creates a public subset using an MDX expression. |" >
+				<Param name="str SubsetName" />
+        <Param name="str MDXStatement" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetDeleteAllElements" func="yes">
+			<Overload retVal="_T: Deletes all elements from a public subset. |" >
+				<Param name="str DimName" />
+				<Param name="str SubsetName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetDestroy" func="yes">
+			<Overload retVal="_T: Deletes a subset from the TM1 database. |" >
+				<Param name="str DimName" />
+        <Param name="str SubsetName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetElementDelete" func="yes">
+			<Overload retVal="_T: Deletes an element from a subset. |" >
+				<Param name="str DimName" />        
+        <Param name="str SubsetName" />        
+        <Param name="nbr IndexOfElementInSubset" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetElementInsert" func="yes">
+			<Overload retVal="_T: Adds an element to an existing subset. |" >
+				<Param name="str DimName" />        
+        <Param name="str SubsetName" />
+        <Param name="str ElementName" />
+        <Param name="nbr IndexOfElementInSubset" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetExists" func="yes">
+			<Overload retVal="_T: Determines if a public subset exists. | nbr [1,0] =" >
+				<Param name="str DimName" />        
+        <Param name="str SubsetName" />  
+      </Overload>
+    </KeyWord>
+    <KeyWord name="SubsetExpandAboveSet" func="yes">
+			<Overload retVal="_T: Sets the Expand Above property and determines its success. | nbr [1,0] =" >
+				<Param name="str DimName" />        
+        <Param name="str SubsetName" />  
+        <Param name="nbr ExpandAbove [1,0]" />  
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetFormatStyleSet" func="yes">
+			<Overload retVal="_T: Applies an existing display style to a subset. |" >
+				<Param name="str DimName" />   
+        <Param name="str SubsetName" />     
+        <Param name="str FormatStyleName" />  
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetGetElementName" func="yes">
+			<Overload retVal="_T: Returns the name of the element at a location. | str =" >
+				<Param name="str DimName" />
+        <Param name="str SubsetName" />
+        <Param name="nbr IndexOfElementInSubset" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetGetSize" func="yes">
+			<Overload retVal="_T: Returns the number of elements in a subset. | nbr =" >
+				<Param name="str DimName" />
+        <Param name="str SubsetName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SubsetIsAllSet" func="yes">
+			<Overload retVal="_T: Sets a subset to dynamically use all dimension elements. |" >
+				<Param name="str DimName" />
+        <Param name="str SubsetName" />
+        <Param name="nbr UseAllElements [1,0]" />  
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SUBST" func="yes">
+			<Overload retVal="RT: Returns a substring of a text string. | str =" >
+				<Param name="str TextString" />
+        <Param name="nbr Beginning" />
+        <Param name="nbr Length" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="SValue">
+			<Overload retVal="_T: TI-Variable refering to the string value of Datasource element. | str =" />
+      </KeyWord>      
+		<KeyWord name="TABDIM" func="yes">
+			<Overload retVal="RT: Returns the dimension name according to its index in the cube. | nbr =" >
+				<Param name="str CubeName" />
+        <Param name="nbr LocationIndexInCube" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="TAN" func="yes">
+			<Overload retVal="RT: Returns the tangent of an angle. | nbr =" >
+				<Param name="nbr Angle" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="TIME" func="yes">
+			<Overload retVal="RT: Returns the system time in (hh:mm) format. | str =" />
+    </KeyWord>
+		<KeyWord name="TIMST" func="yes">
+			<Overload retVal="RT: Returns a formatted date/time string. | str =" >
+				<Param name="nbr SerialDateNumber" />
+        <Param name="str FormatString" />
+      </Overload>
+      <Overload retVal="RT: Returns a formatted date/time string. | str =" >
+				<Param name="nbr SerialDateNumber" />
+        <Param name="str FormatString" />
+        <Param name="nbr UseExtendedYears [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="TIMVL" func="yes">
+			<Overload retVal="RT: Returns the value of a component in a date/time value. | nbr =" >
+				<Param name="nbr SerialDateNumber" />
+        <Param name="str ComponentType [Y,M,D,H,I,S]" />
+      </Overload>
+			<Overload retVal="RT: Returns the value of a component in a date/time value. | nbr =" >
+				<Param name="nbr SerialDateNumber" />
+        <Param name="str ComponentType [Y,M,D,H,I,S]" />
+        <Param name="nbr UseExtendedYears [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="TODAY" func="yes">
+			<Overload retVal="RT: Returns the current date in 'yy-mm-dd' format. | str =" />
+      <Overload retVal="RT: Returns the current date in 'yy-mm-dd' format. | str =" >
+				<Param name="nbr ReturnFourDigitYear [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="TRIM" func="yes">
+			<Overload retVal="RT: Trims leading and trailing blanks from a string. | str =" >
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="UNDEF" func="yes">
+			<Overload retVal="RT: Returns the 'undefined' value. | nbr =" />
+    </KeyWord>
+		<KeyWord name="UNDEFVALS" func="yes">
+			<Overload retVal="RT: Changes the default value for the cube to a special undefined value. |" />
+    </KeyWord>
+		<KeyWord name="UPPER" func="yes">
+			<Overload retVal="RT: Converts all characters in a string to upper case. | str =" >
+				<Param name="str TextString" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewColumnDimensionSet" func="yes">
+			<Overload retVal="_T: Sets a column dimension for a view. |" >
+        <Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="str DimName" />
+        <Param name="nbr StackPositionIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewColumnSuppressZeroesSet" func="yes">
+			<Overload retVal="_T: Toggles the column based zero suppression for a view. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr NonZeroValuesOnly [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewConstruct" func="yes">
+			<Overload retVal="_T: Pre-calculates and stores a view in memory. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewCreate" func="yes">
+			<Overload retVal="_T: Creates an empty view. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewDestroy" func="yes">
+			<Overload retVal="_T: Deletes a view from the TM1 database. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewExists" func="yes">
+			<Overload retVal="_T: Determines if a public view exists on the server. | nbr [1,0] =" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewExtractSkipCalcsSet" func="yes">
+			<Overload retVal="_T: Toggles the exclusion of consolidated values for a view extract. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr ExcludeConsValues [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewExtractSkipRuleValuesSet" func="yes">
+			<Overload retVal="_T: Toggles the exclusion of rule calculated values for a view extract. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr ExcludeRuleValues [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewExtractSkipZeroesSet" func="yes">
+			<Overload retVal="_T: Toggles the exclusion of zero values for a view extract. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr ExcludeZeroValues [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewRowDimensionSet" func="yes">
+			<Overload retVal="_T: Sets a row dimension for a view. |" >
+        <Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="str DimName" />
+        <Param name="nbr StackPositionIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewRowSuppressZeroesSet" func="yes">
+			<Overload retVal="_T: Toggles the row based zero suppression for a view. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr NonZeroValuesOnly [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewSetSkipCalcs" func="yes">
+			<Overload retVal="not_specified ###. | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewSetSkipRuleValues" func="yes">
+			<Overload retVal="not_specified. ### | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewSetSkipZeroes" func="yes">
+			<Overload retVal="not_specified ###. | nbr =" >
+				<Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewSubsetAssign" func="yes">
+			<Overload retVal="_T: Assigns a named subset to a view. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="str DimName" />
+        <Param name="str SubsetName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewSuppressZeroesSet" func="yes">
+			<Overload retVal="_T: Toggles the overall zero suppression for a view. |  " >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="nbr NonZeroValuesOnly [1,0]" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewTitleDimensionSet" func="yes">
+			<Overload retVal="_T: Sets a title dimension for a view. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="str DimName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewTitleElementSet" func="yes">
+			<Overload retVal="_T: Sets a title element for a view. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+        <Param name="str TitleDimName" />
+        <Param name="nbr TitleDimElemIndex" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="ViewZeroOut" func="yes">
+			<Overload retVal="_T: Sets all data points in a view to zero. |" >
+				<Param name="str CubeName" />
+        <Param name="str ViewName" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="while" func="yes">
+			<Overload retVal="_T: Initiates a conditional process loop: while(); end; |" >
+				<Param name="Condition" />
+      </Overload>
+    </KeyWord>          
+		<KeyWord name="WildcardFileSearch" func="yes">
+			<Overload retVal="_T: Returns the first files in a directory matching the criteria. | str =" >
+				<Param name="str SearchPathName" />
+        <Param name="str FileNameToBeginWith" />
+      </Overload>
+    </KeyWord>
+		<KeyWord name="YEAR" func="yes">
+			<Overload retVal="RT: Returns a numeric value for the year a date string. | nbr =" >
+				<Param name="str DateString [yy-mm-dd]" />
+      </Overload>
+    </KeyWord>
+
+		
+  </AutoComplete>
+</NotepadPlus>        
