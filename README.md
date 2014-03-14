@@ -1,7 +1,7 @@
 Notepad++ TM1-PlugIn
 ========================
 
-This slim plugin enhances the popular Notepad++ editor with features designed the IBM Cognos TM1 API.
+This slim plugin enhances the popular Notepad++ editor with features designed for the IBM Cognos TM1 API.
 
 
 Features
